@@ -1,0 +1,439 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Custom */
+
+/* Fonts */
+
+@font-face {
+    src: url(../fonts/Outfit-Regular.ttf);
+    font-family: kuna;
+}
+
+/* Generals */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: kuna;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.container
+{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.space40 {
+    padding: 40px 0;
+}
+
+.absolute
+{
+    padding-top: 25vh;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 32px;
+}
+
+/* Headings */
+
+h1 {
+    font-size: 32px;
+    color: white;
+}
+h2{
+    font-size: 26px;
+    font-weight: 600;
+    color: #323232;
+}
+p{
+    margin: 12px 0;
+    color: #6d6d6d;
+    font-weight: 500;
+}
+
+
+/* Header */
+.logo
+{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+.header {
+    padding: 32px 0;
+    position: absolute;
+    width: 100%;
+}
+
+.header a
+{
+    color: white;
+}
+
+.menu a {
+    margin: 0 20px;
+}
+
+/* Social */
+
+.social a {
+    margin: 0 14px;
+}
+
+.social img {
+width: 14px;
+}
+
+.btn-login {
+    margin-left: -120px;
+    background-color: #cf3732;
+}
+
+
+/* sec1 Banner */
+.sec1 {
+    width: 100vw;
+    height: 100vh;
+}
+.banner {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.6), rgba(0, 255, 34, 0.6)), url(../media/home-bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.label
+{
+    color: white;
+    margin-top: 24px;
+}
+.label a, .label p {
+    color: white;
+}
+
+.label span {
+    text-transform: uppercase;
+}
+
+.btn-project
+{
+    color: white;
+    border: 1px solid white;
+    margin-right: 20px;
+}
+
+
+/* sec2        Introduction */
+
+.squares span {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: #ccc;
+    margin: 10px 1px;
+    margin-bottom: 0;
+}
+
+.sec2 img {
+    width: 100%;
+}
+
+.sec2 .txt {
+    flex: 0 1 40%;
+}
+.sec2 .data {
+    flex: 0 1 25%;
+
+}
+.sec2 .pic {
+    flex: 0 1 30%;
+    padding-top: 60px;
+
+}
+.sec2 .pic img {
+    display: flex;
+}
+
+
+/* Stats */
+.stats
+{
+    margin-bottom: 20px;
+}
+.bar {
+    margin-top: 6px;
+    background-color: black;
+    height: 4px;
+}
+.webdesign .bar {
+    width: 85%;
+}
+.photography .bar
+{
+    width: 90%;
+}
+.c-marketing .bar {
+    width: 75%;
+}
+.cms .bar
+{
+    width: 70%;
+}
+
+
+/* Sec3    Our Blog */
+
+
+.sec3 {
+    background-color: #eee;
+    text-align: center;
+}
+
+.sec3 .art
+{
+    width: 49%;
+    background-color: white;
+    box-shadow: -2px -2px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.sec3 .art-img img{
+    width: 100%;
+    margin-bottom: -6px;
+}
+.art-img
+{
+    flex: 0 1 35%;
+}
+.art-txt {
+    flex: 0 1 60%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.sec3 h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 8px;
+    color: #323232;
+}
+
+.sec3 .date span {
+    color: red;
+    font-weight: 600;
+    /* margin: 12px 0; */
+}
+.btn-blog {
+    display: inline-block;
+    background-color: #ddd;
+    color: #323232;
+    margin-top: 12px;
+    font-weight: 600;
+}
+.clock {
+    width: 14px;
+    vertical-align: middle;
+    margin-right: 6px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+/* sec4 */
+
+.sec4 {
+    background-color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.sec4 .box
+{
+    flex: 0 1 23%;
+    margin-top: 40px;
+}
+
+.box img {
+    width: 100%;
+}
+
+
+/* sec5 Contact Us */
+
+.sec5 
+{
+    text-align: center;
+    padding: 60px 0;
+    background: linear-gradient(to right, #0C75E5, #7EF363);
+    color: white;
+}
+.sec5 h2 {
+    color: white;
+}
+.sec5 .form {
+    flex: 0 1 60%;
+}
+
+
+.form .box {
+    border-radius: 4px;
+    height: 40px;
+    border: none;
+    margin: 12px 0;
+}
+
+.form .big-box
+{
+    width: 100%;
+    height: 84px;
+}
+
+.form4 input {
+    flex: 0 1 48%;
+    font-family: kuna;
+}
+
+.form input::placeholder {
+    padding-left: 10px;
+}
+
+.form .big-box {
+    position: relative;
+}
+
+.form .big-box::placeholder {
+    position: absolute;
+    top: 12px;
+    left: 2px;
+}
+
+.btn-send {
+    border: none;
+    padding: 12px 32px;
+    background-color: #cf3732;
+    color: white;
+    display: flex;
+    align-self: flex-start;
+}
+
+
+/* map */
+
+.sec5 .map {
+    flex: 0 1 38%;
+}
+
+.gmap {
+    border-radius: 50%;
+}
+
+
+/* Footer */
+
+.footer
+{
+    padding: 60px 0;
+    background: linear-gradient(To right, rgb(66, 66, 66), black 30%);
+}
+
+.footer h2, .footer p, .footer li, .footer small, .footer span{
+    color: white;
+    font-weight: 500;
+}
+
+.footer p {
+    /* color: white; */
+}
+
+.footer .hydro{
+    flex: 0 1 40%;
+}
+.footer .nav {
+    flex: 0 1 50%;
+}
+
+.footer .nav .box {
+    flex: 0 1 20%;
+}
+
+.footer .flex {
+    align-items: flex-start;
+}
+
+.footer-bottom
+{
+    border-top: 1px solid rgb(66, 66, 66);
+    padding: 20px 0;
+}
+
+.contact-details  span {
+    margin-right: 20px;
+}
+
+.footer .social {
+    margin-right: 100px;
+}
